@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 26 14:21:29 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>59 seconds (59797 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>sanity </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.radiology_testcase.verifyRadiologyModule()'><b>verifyRadiologyModule</b><br>Test class: testcases.radiology_testcase<br>Test method: 1. Login in the healthapp application
+2. Scroll down menu till radiology
+3. Click on the radiology</td>
+<td></td>
+<td>5</td>
+<td>testcases.radiology_testcase@12cd9150</td></tr>
+<tr>
+<td title='testcases.radiology_testcase.verifyNavigationToAnotherSubModuleAfterOpeningTheListRequestsSection()'><b>verifyNavigationToAnotherSubModuleAfterOpeningTheListRequestsSection</b><br>Test class: testcases.radiology_testcase<br>Test method: Pre condition: User should be logged in and it is on radiology module
+1. Click on the list requests 
+2. Click on the edit doctors
+3. Click on Ward Billing
+4. Click on List Requests</td>
+<td></td>
+<td>3</td>
+<td>testcases.radiology_testcase@12cd9150</td></tr>
+<tr>
+<td title='testcases.radiology_testcase.performScrollOperation()'><b>performScrollOperation</b><br>Test class: testcases.radiology_testcase<br>Test method: Pre condition: User should be logged in
+1.  Select "All" drop down option from the "Filter" field 
+2.  Scroll all the way to the bottom of the page</td>
+<td></td>
+<td>0</td>
+<td>testcases.radiology_testcase@12cd9150</td></tr>
+<tr>
+<td title='testcases.radiology_testcase.verifyUrlOfTheRadiologyModule()'><b>verifyUrlOfTheRadiologyModule</b><br>Test class: testcases.radiology_testcase<br>Test method: 1. Login in the healthapp application
+2. Scroll down menu till radiology
+3. Click on the radiology and verify list request module
+</td>
+<td></td>
+<td>0</td>
+<td>testcases.radiology_testcase@12cd9150</td></tr>
+<tr>
+<td title='testcases.radiology_testcase.verifyListRequestsComponents()'><b>verifyListRequestsComponents</b><br>Test class: testcases.radiology_testcase<br>Test method: Pre condition: User should be logged in and it is on radiology module
+1. Click on the radiology module drop-down arrow 
+2. Click on list request section</td>
+<td></td>
+<td>12</td>
+<td>testcases.radiology_testcase@12cd9150</td></tr>
+<tr>
+<td title='testcases.radiology_testcase.verifyToolTipText()'><b>verifyToolTipText</b><br>Test class: testcases.radiology_testcase<br>Test method: Pre condition: User should be logged in and it is on Radiology > List Request section 
+1. Hover the mouse over the star/favourite icon. 
+2. Verify that a tooltip with the text "Remember this date" appears when hovering over the star.</td>
+<td></td>
+<td>0</td>
+<td>testcases.radiology_testcase@12cd9150</td></tr>
+<tr>
+<td title='testcases.radiology_testcase.verifyDatesAreRemeberedCorrectly()'><b>verifyDatesAreRemeberedCorrectly</b><br>Test class: testcases.radiology_testcase<br>Test method: Pre condition: User should be logged in and it is on Radiology > List Requests section
+1. Navigate to the Radiology module.
+2. Click on the "List Requests" section.
+3. Click on "FROM" and select "Jan 2020"
+4. Click on "TO" and selct "march 2024"
+5. Click on "star" tooltip
+6. Click on "OK" button
+7. Navigate back to the "List Requests" section of the Radiology module.</td>
+<td></td>
+<td>2</td>
+<td>testcases.radiology_testcase@12cd9150</td></tr>
+<tr>
+<td title='testcases.radiology_testcase.verifyRadiologySubModules()'><b>verifyRadiologySubModules</b><br>Test class: testcases.radiology_testcase<br>Test method: Pre condition: User should be logged in 
+1. Click on the radiology Module drop-down arrow</td>
+<td></td>
+<td>2</td>
+<td>testcases.radiology_testcase@12cd9150</td></tr>
+</table><p>
+</body>
+</html>
